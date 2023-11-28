@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(160, 59, 59);
+    color: white;
+    height: 55px;
+    font-size: 25;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+
+.GameContainer{
+    background-color: rgb(118, 200, 117);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Container{
+    background-color: rgb(107, 179, 201);
+    display: grid ;
+    grid-template-columns: repeat(3 , 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+
+.Box{
+    border: 3px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box:hover{
+    background-color: rgb(73, 73, 148);
+}
+
+.Info{
+    font-size: 22px;
+    padding: 60px;
+}
+
+.GameInfo{
+    padding: 5px 50px;
+}
+
+.GameInfo h1{
+    font-size: 1.5rem;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 6px 14px;
+    background-color: rgb(227, 197, 202);
+    border-radius: 6px;
+}
+
+
+@media screen and (max-width:950px)
+{
+    .GameContainer{
+        flex-wrap: wrap;
+    }
+
+    .GameInfo{
+        margin-top: 34px;
+    }
+
+    .GameInfo h1{
+        font-size: 1.5rem;
+    }
+
+    .Container{
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}

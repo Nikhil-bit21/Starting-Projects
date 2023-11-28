@@ -1,0 +1,1 @@
+const wavPlayer = require('node-wav-player');
